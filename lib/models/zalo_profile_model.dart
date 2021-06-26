@@ -5,11 +5,11 @@ ZaloProfileModel zaloProfileModelFromJson(String str) => ZaloProfileModel.fromJs
 String zaloProfileModelToJson(ZaloProfileModel data) => json.encode(data.toJson());
 
 class ZaloProfileModel {
-  String birthday;
-  String gender;
-  String name;
-  String id;
-  Picture picture;
+  String? birthday;
+  String? gender;
+  String? name;
+  String? id;
+  Picture? picture;
 
   ZaloProfileModel({
     this.birthday,
@@ -52,7 +52,7 @@ class ZaloProfileModel {
 }
 
 class Picture {
-  Data data;
+  Data? data;
 
   Picture({
     this.data,
@@ -75,7 +75,7 @@ class Picture {
 }
 
 class Data {
-  String url;
+  String? url;
 
   Data({
     this.url,

@@ -5,10 +5,10 @@ ZaloLoginResult zaloLoginResultFromJson(String str) => ZaloLoginResult.fromJson(
 String zaloLoginResultToJson(ZaloLoginResult data) => json.encode(data.toJson());
 
 class ZaloLoginResult {
-  String oauthCode;
-  String errorMessage;
-  int errorCode;
-  String userId;
+  String? oauthCode;
+  String? errorMessage;
+  int? errorCode;
+  String? userId;
 
   ZaloLoginResult({
     this.oauthCode,
