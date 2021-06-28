@@ -18,10 +18,10 @@ class ZaloLoginResult {
   });
 
   ZaloLoginResult copyWith({
-    String oauthCode,
-    String errorMessage,
-    int errorCode,
-    String userId,
+    String? oauthCode,
+    String? errorMessage,
+    int? errorCode,
+    String? userId,
   }) =>
       ZaloLoginResult(
         oauthCode: oauthCode ?? this.oauthCode,
